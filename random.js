@@ -5,9 +5,9 @@ var namespace = "http://www.w3.org/2000/svg"
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createFirstScene() {
-  makeEllipse(135,55,20,28,"darkorange")
-makeRect(70,64,15,20)
-makeRect(105,20,50,57,"yellow")
+  makeEllipse(80,62,22,42,"darkorange")
+makeRect(67,74,15,20)
+makeRect(105,20,50,62,"yellow")
 makeCircle(120,39,8,"white")
 makeCircle(142,39,8,"white")
 makeCircle(120,39,5)
@@ -16,8 +16,8 @@ makeRect(125,50,10,5,"red")
 makeRect(105,59,50,18,"brown")
 makeRect(109,75,5,51,"yellow")
 makeRect(145,75,5,51,"yellow")
-makeCircle(90,72,10,"darkgrey")
-makeCircle(55,50,10,"darkgrey")
+makeCircle(90,81,7,"darkgrey")
+makeCircle(70,50,7,"darkgrey")
 makeRect(103,49,5,40,"yellow")
 makeRect(150,49,5,40,"yellow")
 }
@@ -27,18 +27,8 @@ makeRect(150,49,5,40,"yellow")
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createSecondScene() {
-  makeEllipse(135,55,20,28,"darkorange")
-makeRect(150,20,50,57,"yellow")
-makeCircle(120,39,8,"white")
-makeCircle(142,39,8,"white")
-makeCircle(120,39,5)
-makeCircle(142,39,5)
-makeRect(125,50,10,5,"red")
-makeRect(105,59,50,18,"brown")
-makeRect(109,75,5,51,"yellow")
-makeRect(145,75,5,51,"yellow")
-makeRect(103,49,5,40,"yellow")
-makeRect(150,49,5,40,"yellow")
+  makeRect(30,15,19,31,"darkgray",0.2)
+  
 }
 
 
@@ -46,7 +36,7 @@ makeRect(150,49,5,40,"yellow")
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createThirdScene() {
-makeEllipse(20,70,20,15,"brown")
+
 }
 
 
@@ -57,25 +47,17 @@ makeEllipse(20,70,20,15,"brown")
 // This function is called whenever you press the "Go!" button.
 function createRandomScene() {
     // Generate a random number between 0 and 1, and store it in a variable.
-var = random.Math.random()
+var rando = Math.random()
     // If the number is less than 0.33, call the function to create your first scene.
       if(rando < 0.33){
       createFirstScene()
-      }
+      }else if(rando < 0.67){
+      createSecondScene()
+      }else{
+      createThirdScene()
 
-
-
-    // Else, if the number is less than 0.67, call the function to create your second scene.
-    }else if(rando < 0.67){
-    
-    createSecondScene()
-    
-    }else{ 
-    
-    createThirdScene
-        
     // Else, call the function to create your third scene.
-    
+
 
     }
 }
