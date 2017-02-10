@@ -27,7 +27,23 @@ makeRect(150,49,5,40,"yellow")
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createSecondScene() {
-  makeRect(30,15,19,31,"darkgray",0.2)
+  makeRect(59,35,40,65,"darkgray")
+  makeRect(70,79,16,23,"chocolate")
+  makeCircle(69,54,6,"darkcyan")
+  makeCircle(89,54,6,"darkcyan")
+  makeRect(74,50,10,27,"darkgoldenrod")
+  makeRect(105,20,50,62,"yellow")
+  makeCircle(120,39,8,"white")
+  makeCircle(142,39,8,"white")
+  makeCircle(120,39,5)
+  makeCircle(142,39,5)
+  makeRect(125,50,10,5,"red")
+  makeRect(105,59,50,18,"brown")
+  makeRect(109,75,5,51,"yellow")
+  makeRect(145,75,5,51,"yellow")
+  makeRect(103,49,5,40,"yellow")
+  makeRect(150,49,4,40,"yellow")
+  makeLine(93,45,54,36,"black",4,0.4)
   
 }
 
